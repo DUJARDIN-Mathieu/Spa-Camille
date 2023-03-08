@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engine": {
-    "node": "12.x"
-  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js"
