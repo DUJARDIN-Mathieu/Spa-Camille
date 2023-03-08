@@ -1,4 +1,20 @@
-<%- include('header') %>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levray Rêve</title>
+    <!-- core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet"> 
+    <link href="/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">       
+    <link rel="shortcut icon" href="/images/ico/favicon.ico"> 
+</head>
+
+<body id="accueil">
 
 <header id="header">
     <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
@@ -401,7 +417,7 @@
     <div class="container">
         <div class="container contact-info">
             <div class="row">
-            <div class="col-sm-4 col-md-4">
+                <div class="col-sm-4 col-md-4">
                     <div class="contact-form">
                         <h3>Contact Info</h3>
 
@@ -438,4 +454,31 @@
     </div>   
 </section>
 
-<%- include('footer') %>
+<footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script> 
+    <script src="/js/mousescroll.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/custom-scripts.js"></script>
+</body>
+</html>
