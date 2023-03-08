@@ -1,7 +1,7 @@
 const mainController = {
     homePage: async (req, res) => {
         try {
-            res.render('homePage')
+            res.render('../views/homePage')
         } catch (error) {
             console.log(error);
             res.status(500).send(`An error occured with the database :\n ${error.message}`)
