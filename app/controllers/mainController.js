@@ -11,7 +11,7 @@ const mainController = {
     },
     reservationPage: async (req, res) => {
         try {
-            ejs.render('reservationPage')
+            res.render('reservationPage')
         } catch (error) {
             console.log(error);
             res.status(500).send(`An error occured with the database :\n ${error.message}`)
