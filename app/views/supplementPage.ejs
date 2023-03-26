@@ -1,0 +1,33 @@
+<%- include('header') %>
+<section id="supplement">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeInDown">Nos petit plus :</h2>
+            <p class="wow fadeInDown">Nos petit plus sont preparé sur place par nos petites mains de chef.</p>
+        </div>
+        <div class="row">
+            <div class="features">
+                <form action="/ajouter-session" method="post">
+                    <% sup.forEach((sup) => { %>
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="media-body">
+                                <h4 class="media-heading"><%=sup.nom%></h4>
+                                <p><%=sup.description%></p>
+                                <p><%=sup.prix%> €</p>
+                                <label for="<%=sup.id%>">
+                                    <input type="checkbox" name="produits[]" id="<%=sup.id%>" value="<%=sup.id%>">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+                    <input type="submit" values="Validez">
+            </form>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('footer') %>

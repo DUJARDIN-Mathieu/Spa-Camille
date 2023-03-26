@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levray Rêve</title>
-    <!-- core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/animate.min.css" rel="stylesheet"> 
-    <link href="/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">       
-    <link rel="shortcut icon" href="/images/ico/favicon.ico"> 
-</head>
+<%- include('header') %>
 
 <body id="accueil">
 
@@ -270,7 +256,7 @@
                         <li>Peignoirs et serviettes à disposition</li>
                         <li>2 créneaux disponibles : <strong>12h</strong> ou <strong>15h</strong></li>
                         <li>Surprise offerte</li>
-                        <li class="plan-purchace"><a class="btn btn-primary" href="https://calendly.com/levray-reve/2h">Réservez maintenant</a></li>
+                        <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/1">Réservez maintenant</a></li>
                     </ul>
                 </div>
             </div>
@@ -295,7 +281,32 @@
                         <li>Peignoirs et serviettes à disposition</li>
                         <li>2 créneaux disponibles : <strong>12h</strong> ou <strong>15h</strong></li>
                         <li>Surprise offerte</li>
-                        <li class="plan-purchace"><a class="btn btn-primary" href="https://calendly.com/levray-reve/2h-we">Réservez maintenant</a></li>
+                        <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/2">Réservez maintenant</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                    <ul class="formule">
+                        <li class="plan-header">
+                            <div class="plan-name">
+                                La zenitude
+                            </div>
+                            <div class="price-duration">
+                                <span class="price">
+                                    70€
+                                </span>
+                                <span class="duration">
+                                    pour 2 personnes
+                                </span>
+                            </div>
+                        </li>
+                        <li>4 heures de spa (du lundi au dimanche)</li>
+                        <li>Cocktails</li>
+                        <li>Peignoirs et serviettes à disposition</li>
+                        <li>1 créneaux disponibles : <strong>12h</strong> </li>
+                        <li>Surprise offerte</li>
+                        <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/3">Réservez maintenant</a></li>
                     </ul>
                 </div>
             </div>
@@ -320,7 +331,7 @@
                         <li>Peignoirs et serviettes à disposition</li>
                         <li>Petit déjeuner</li>
                         <li>Surprise offerte</li>
-                        <li class="plan-purchace"><a class="btn btn-primary" href="https://calendly.com/levray-reve/nuitee-sem">Réservez maintenant</a></li>
+                        <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/4">Réservez maintenant</a></li>
                     </ul>
                 </div>
             </div>
@@ -345,7 +356,7 @@
                         <li>Peignoirs et serviettes à disposition</li>
                         <li>Petit déjeuner</li>
                         <li>Surprise offerte</li>
-                        <li class="plan-purchace"><a class="btn btn-primary" href="https://calendly.com/levray-reve/nuitee-we">Réservez maintenant</a></li>
+                        <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/5">Réservez maintenant</a></li>
                     </ul>
                 </div>
             </div>
@@ -454,31 +465,4 @@
     </div>   
 </section>
 
-<footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script> 
-    <script src="/js/mousescroll.js"></script>
-    <script src="/js/smoothscroll.js"></script>
-    <script src="/js/jquery.prettyPhoto.js"></script>
-    <script src="/js/jquery.isotope.min.js"></script>
-    <script src="/js/jquery.inview.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/custom-scripts.js"></script>
-</body>
-</html>
+<%- include('footer') %>

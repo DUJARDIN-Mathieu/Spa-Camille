@@ -8,6 +8,7 @@ const router = express.Router();
 
 router.get('/', mainController.homePage);
 
-router.get('/reservez', mainController.reservationPage);
+router.get('/supplement/:id', mainController.supplementPage);
+router.post('/ajouter-session', mainController.ajoutSupp)
 
 module.exports = router;
