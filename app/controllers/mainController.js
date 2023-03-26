@@ -23,19 +23,20 @@ const mainController = {
             res.status(500).send(`An error occured with the database :\n ${error.message}`);
         }
     },
+    
     ajoutSupp: async (req, res) => {
         try {
+            const formule = req.session.panier[0];
+            req.session.panier = [];
+            req.session.panier[0] = formule;
             const produits = req.body.produits;
-            if (produits){
-                if(!req.session.produits){
-                    req.session.produits = []
+            if (produits) {
+                for (const produit of produits) {
+                    const formule = await dataMapper.getProduitByID(produit);
+                    req.session.panier.push(formule);
                 }
-                produits.forEach((produit) => {
-                    req.session.produits.push(produit);
-                });
             }
             const panier = req.session.panier 
-            console.log(panier)
             res.render('recapitulatifPage', {
                 panier
             });
@@ -44,6 +45,7 @@ const mainController = {
             res.status(500).send(`An error occured with the database :\n ${error.message}`);
         }
     }
+    
 
 }
 module.exports = mainController;
