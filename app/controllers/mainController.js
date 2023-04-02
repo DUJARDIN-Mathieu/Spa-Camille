@@ -56,14 +56,9 @@ const mainController = {
             // Stocker le panier mis à jour dans la session
             req.session.panier = panier;
             panier = req.session.panier;
-            let total = panier.reduce((acc, cur) => acc + cur.prix, 0);
-            process.env.TOTAL = total * 100;
-    
+            
             // Rediriger l'utilisateur vers la page du panier
-            res.render('recapitulatifPage', {
-                titre : "Recapitulatif", total, panier
-
-            });
+            res.redirect('/recapitulatif');
         } catch (error) {
             console.error(error);
             res.status(500).send(`An error occured with the database:\n${error.message}`);
@@ -117,8 +112,12 @@ const mainController = {
     recap: async (req, res) => {
         try {
             let titre = 'Recapitulatif'
+            let panier = req.session.panier
+            console.log(req.session.panier)
+            let total = panier.reduce((acc, cur) => acc + cur.prix, 0);
+            process.env.TOTAL = total * 100;
             res.render('recapitulatifPage', {
-                titre
+                titre, panier, total
             })
         } catch (error) {
             console.log(error);

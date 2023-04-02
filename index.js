@@ -17,6 +17,10 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
+// Charger le middleware pour parser les données POST
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json())
+
 // Setup du dossier public
 app.use(express.static('public'));
 
@@ -42,9 +46,7 @@ app.use((req, res, next) => {
     next()
 });
 
-// Charger le middleware pour parser les données POST
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json())
+
 
 // Plug le router
 app.use(router);

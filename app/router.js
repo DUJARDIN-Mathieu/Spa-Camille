@@ -10,7 +10,7 @@ router.get('/', mainController.homePage);
 
 router.get('/supplement/:id', mainController.supplementPage);
 
-router.get('/ajouter-au-panier', mainController.recap)
+router.get('/recapitulatif', mainController.recap)
 router.post('/ajouter-au-panier', mainController.ajoutSupp);
 
 router.get('/payment-page', mainController.stripe_pay)
