@@ -5,8 +5,7 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
-const path = require('path');
-const stripe = require('stripe')(process.env.KEY_STRIPE_SECRET)
+
 
 // Import des dépendences internes
 const router = require('./app/router');
