@@ -5,6 +5,7 @@ const mainController = {
 
     homePage: async (req, res) => {
         try {
+            
             let titre = 'Levray rêve'
             res.render('homePage', {
                 titre
@@ -16,6 +17,7 @@ const mainController = {
     },
     supplementPage: async (req, res) => {
         try {
+            req.session.panier = []
           // Récupérer la formule sélectionnée
           const formule = await dataMapper.getProduitByID(req.params.id);
           // Ajouter la formule au panier
