@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     padding-top: 100px;
@@ -773,8 +777,9 @@ li.plan-purchase .btn {
 .contact-info{
     background: #98DC95;
     padding: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     background-color: #00a59d ;
+
 }
 .contact-info address {
     margin-bottom: 20px;
@@ -800,6 +805,9 @@ li.plan-purchase .btn {
 ********* Footer ******
 ************************/
 #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;

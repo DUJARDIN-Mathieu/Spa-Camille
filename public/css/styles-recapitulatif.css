@@ -1,0 +1,65 @@
+/* Couleur principale */
+:root {
+    --main-color: #002c2b;
+  }
+  
+  /* Police */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Titre principal */
+  h1 {
+    font-size: 36px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+  }
+  
+  /* Sous-titre */
+  h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  /* Liste des suppléments */
+  ul {
+    margin-left: 20px;
+  }
+  
+  /* Liens */
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #fff;
+    background-color: var(--main-color);
+  }
+  
+  /* Bouton Calendly */
+  .calendly-link {
+    background-color: #002c2b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calendly-link:hover {
+    background-color: #004341;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  

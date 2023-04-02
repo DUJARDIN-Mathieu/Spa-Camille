@@ -3,8 +3,10 @@ require('dotenv').config();
 
 // Import des dépendences
 const express = require('express');
-const session = require('express-session')
-const bodyParser = require('body-parser')
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const path = require('path');
+const stripe = require('stripe')(process.env.KEY_STRIPE_SECRET)
 
 // Import des dépendences internes
 const router = require('./app/router');
@@ -20,7 +22,8 @@ app.set('views', './app/views');
 app.use(express.static('public'));
 
 // Charger le middleware pour parser les données POST
-app.use(bodyParser.urlencoded({ extended: true}))
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json())
 
 // Mise en place de la session pou enregistre le panier
 app.use(

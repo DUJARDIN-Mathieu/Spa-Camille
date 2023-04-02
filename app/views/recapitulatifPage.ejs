@@ -1,29 +1,30 @@
+
 <%- include('header') %>
-<section id="supplement">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Nos petit plus :</h2>
-            <p class="wow fadeInDown">Nos petit plus sont preparé sur place par nos petites mains de chef.</p>
-        </div>
-        <div class="row">
-            <div class="features">
-                <p><%=panier[0]%></p>
-                <% let total = 0 %>
-                <% for(let i = 0; i < panier.length; i++) { %>
-                    <% if (panier[i] && panier[i].prix) { %>
-                        <% total += Number(panier[i].prix) %>
-                    <% } %>
-                <% } %>
-                <p>Total : <%= total %> €</p>
-            </div>
-            
-        </div>
-        <!-- Début de widget de lien Calendly -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <a href="" onclick="Calendly.initPopupWidget({url: '<%=panier[0].description%>' });return false;">Choisir sa réservation</a>
-        <!-- Fin de widget de lien Calendly -->
-        
-    </div>
-</section>
+  <link rel="stylesheet" href="/css/styles-recapitulatif.css">
+</head>
+<body>
+
+  <main>
+    <section class="container">
+      <h1>Récapitulatif de la réservation</h1>
+      <h2>Formule choisie : <%= panier[0].nom %> (<%= panier[0].prix %> €)</h2>
+      <% if (panier.length > 1) { %>
+      <h2>Suppléments choisis :</h2>
+      <ul>
+        <% for (var i = 1; i < panier.length; i++) { %>
+        <li><%= panier[i].nom %> (<%= panier[i].prix %> €)</li>
+        <% } %>
+      </ul>
+      <% } %>
+      <h2>Total : <%= total %> €</h2>
+      <!-- Début de widget de lien Calendly -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <a class="calendly-link" href="" onclick="Calendly.initPopupWidget({url: '<%=panier[0].description%>' });return false;">Choisir sa réservation</a>
+      <!-- Fin de widget de lien Calendly -->
+      <a href="/payment-page">Payer</a>
+    </section>
+  </main>
+
+
 <%- include('footer') %>
