@@ -16,44 +16,61 @@ const mainController = {
     },
     supplementPage: async (req, res) => {
         try {
-            const formule = await dataMapper.getProduitByID(req.params.id);
-            req.session.panier[0] = formule;
-            const sup = await dataMapper.getProduitByCategory('Supplement');
-            let titre = 'Nos suppléments'
-            res.render('supplementPage', {
-                sup,
-                titre
+          // Récupérer la formule sélectionnée
+          const formule = await dataMapper.getProduitByID(req.params.id);
+          // Ajouter la formule au panier
+          req.session.panier[0] = formule;
+          console.log(req.session.panier)
+          // Récupérer la liste des suppléments
+          const supplement = await dataMapper.getProduitByCategory('Supplement');
+      
+          // Rendre la page "supplementPage"
+          res.render('supplementPage', {
+            supplement,
+            titre: 'Nos suppléments'
+          });
+        } catch (error) {
+          console.error(error);
+          res.status(500).send(`An error occured with the database:\n${error.message}`);
+        }
+      },
+      
+    
+      ajoutSupp: async (req, res) => {
+        try {
+            // Récupérer la liste des suppléments sélectionnés depuis le corps de la requête
+            const supplementsSelectionnes = req.body['supplements'];
+            console.log(req.session.panier)
+    
+            // Récupérer le panier actuel de l'utilisateur depuis la session
+            let panier = req.session.panier;
+            console.log(panier)
+    
+            // Ajouter les suppléments sélectionnés au panier
+            for (const supplement of supplementsSelectionnes) {
+                // Récupérer les informations de chaque supplément sélectionné
+                const supplements = await dataMapper.getProduitByID(supplement);
+                panier.push(supplements);
+            }
+    
+            // Stocker le panier mis à jour dans la session
+            req.session.panier = panier;
+            panier = req.session.panier;
+            let total = panier.reduce((acc, cur) => acc + cur.prix, 0);
+            process.env.TOTAL = total * 100;
+    
+            // Rediriger l'utilisateur vers la page du panier
+            res.render('recapitulatifPage', {
+                titre : "Recapitulatif", total, panier
+
             });
         } catch (error) {
-            console.log(error);
-            res.status(500).send(`An error occured with the database :\n ${error.message}`);
+            console.error(error);
+            res.status(500).send(`An error occured with the database:\n${error.message}`);
         }
     },
     
-    ajoutSupp: async (req, res) => {
-        try {
-            const formule = req.session.panier[0];
-            req.session.panier = [];
-            req.session.panier[0] = formule;
-            const produits = req.body.produits;
-            if (produits) {
-                for (const produit of produits) {
-                    const formule = await dataMapper.getProduitByID(produit);
-                    req.session.panier.push(formule);
-                }
-            }
-            const panier = req.session.panier 
-            let total = panier.reduce((acc, cur) => acc + cur.prix, 0);
-            process.env.TOTAL = total * 100;
-            let titre = 'Récapitulatif de la réservation'
-            res.render('recapitulatifPage', {
-                panier, total, titre
-            });
-        } catch (error) {
-            console.log(error);
-            res.status(500).send(`An error occured with the database :\n ${error.message}`);
-        }
-    },
+          
 
     stripe_pay: async (req, res) => {
         try {

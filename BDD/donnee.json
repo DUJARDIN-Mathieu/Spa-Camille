@@ -1,107 +1,123 @@
 [
     {
-       "nom" : "La formule Zenitude",
-        "prix" : "70",
+        "id" : 0,
+        "nom" : "La formule Zenitude",
+        "prix" : 70,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/2-heure-de-spa-semaine",
         "image": ""
     },
     {
+        "id" : 1,
         "nom" : "La formule Délice",
-         "prix" : "80",
-         "categorie" : "formule",
-         "calendly" : "https://calendly.com/levray-reve/2-heure-de-spa-week-end",
-         "image": ""
+        "prix" : 80,
+        "categorie" : "formule",
+        "calendly" : "https://calendly.com/levray-reve/2-heure-de-spa-week-end",
+        "image": ""
     },
     {
+        "id" : 3,
         "nom" : "La formule Gourmande",
-         "prix" : "130",
-         "categorie" : "formule",
-         "calendly" : "https://calendly.com/levray-reve/4h",
-         "image": ""
+        "prix" : 130,
+        "categorie" : "formule",
+        "calendly" : "https://calendly.com/levray-reve/4h",
+        "image": ""
     },
     {
+        "id" : 4,
         "nom" : "La formule Relax",
-         "prix" : "170",
-         "categorie" : "formule",
-         "calendly" : "https://calendly.com/levray-reve/nuitee-semaine",
-         "image": ""
+        "prix" : 170,
+        "categorie" : "formule",
+        "calendly" : "https://calendly.com/levray-reve/nuitee-semaine",
+        "image": ""
     },
     {
+        "id" : 5,
         "nom" : "La formule Détente",
-         "prix" : "190",
-         "categorie" : "formule",
-         "calendly" : "https://calendly.com/levray-reve/nuitee-week-end",
-         "image": ""
+        "prix" : 190,
+        "categorie" : "formule",
+        "calendly" : "https://calendly.com/levray-reve/nuitee-week-end",
+        "image": ""
     },
     {
+        "id" : 6,
         "nom" : "Soft",
-         "prix" : "1.5",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 1.5,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 7,
         "nom" : "Cocktail sans alcool",
-         "prix" : "5",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
-    },{
+        "prix" : 5,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
+    },
+    {
+        "id" : 8,
         "nom" : "Salade de fruit frais",
-         "prix" : "15",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 15,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 9,
         "nom" : "Planche Apéritif",
-         "prix" : "17",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 17,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 10,
         "nom" : "Décoration Spécial",
-         "prix" : "20",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 20,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 11,
         "nom" : "Bouquet de rose",
-         "prix" : "30",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 30,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 12,
         "nom" : "Personne supplémentaire",
-         "prix" : "30",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 30,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 13,
         "nom" : "Champagne",
-         "prix" : "35",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 35,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 14,
         "nom" : "Planche apéritif dinatoire",
-         "prix" : "35",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 35,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     },
     {
+        "id" : 15,
         "nom" : "Brunch",
-         "prix" : "40",
-         "categorie" : "supplement",
-         "calendly" : "",
-         "image": ""
+        "prix" : 40,
+        "categorie" : "supplement",
+        "calendly" : "",
+        "image": ""
     }
 
 ]

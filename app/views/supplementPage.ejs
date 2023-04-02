@@ -1,37 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Liste de suppléments</title>
+  </head>
+  <body>
+    <h1>Liste de suppléments</h1>
+    <form action="/ajouter-au-panier" method="POST">
+      <ul>
+        <% supplement.forEach((supplement) => { %>
+          <li>
+            <input type="checkbox" name="supplements[]" value="<%= supplement.id %>">
+            <%= supplement.nom %> - <%= supplement.prix %> €
+          </li>
+        <% }) %>
+      </ul>
+      <button type="submit">Ajouter au panier</button>
+    </form>
+    
+  </body>
+</html>
 
-<%- include('header') %>
-    <link rel="stylesheet" href="/css/styles-supplement.css">
-</head>
-
-<body>
-
-    <section id="supplement">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Nos petits plus :</h2>
-            <p>Nos petits plus sont préparés sur place par nos petites mains de chef.</p>
-          </div>
-          <div class="row">
-            <div class="features">
-              <form action="/ajouter-session" method="post">
-                <% sup.forEach((supplement) => { %>
-                <div class="col-md-4 col-sm-6">
-                  <div class="service-box">
-                    <h4><%= supplement.nom %></h4>
-                    <p><%= supplement.description %></p>
-                    <p><%= supplement.prix %> €</p>
-                    <label class="checkbox-container">
-                      <input type="checkbox" name="supplements[]" id="<%= supplement.id %>" value="<%= supplement.id %>">
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </div>
-                <% }) %>
-                <input type="submit" value="Valider">
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-<%- include('footer') %>

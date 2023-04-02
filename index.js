@@ -20,9 +20,7 @@ app.set('views', './app/views');
 // Setup du dossier public
 app.use(express.static('public'));
 
-// Charger le middleware pour parser les données POST
-app.use(bodyParser.urlencoded({ extended: false}));
-app.use(bodyParser.json())
+
 
 // Mise en place de la session pou enregistre le panier
 app.use(
@@ -30,8 +28,8 @@ app.use(
         secret: process.env.SESSION_SECRET,
         resave: true,
         saveUninitialized: true,
-        coockie: {
-            secure: true,
+        cookie: {
+            secure: false,
             maxAge: 1*60*60*1000
         },
     })
@@ -44,6 +42,10 @@ app.use((req, res, next) => {
     next()
 });
 
+// Charger le middleware pour parser les données POST
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json())
+
 // Plug le router
 app.use(router);
 
@@ -52,3 +54,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Listening at http://localhost:${PORT}`);
 })
+
