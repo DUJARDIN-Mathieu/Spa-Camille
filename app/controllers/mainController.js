@@ -38,20 +38,20 @@ const mainController = {
     
       ajoutSupp: async (req, res) => {
         try {
-            // Récupérer la liste des suppléments sélectionnés depuis le corps de la requête
-            const supplementsSelectionnes = req.body['supplements'];
-            console.log(req.session.panier)
-    
             // Récupérer le panier actuel de l'utilisateur depuis la session
             let panier = req.session.panier;
-            console.log(panier)
-    
-            // Ajouter les suppléments sélectionnés au panier
-            for (const supplement of supplementsSelectionnes) {
-                // Récupérer les informations de chaque supplément sélectionné
-                const supplements = await dataMapper.getProduitByID(supplement);
-                panier.push(supplements);
-            }
+
+           if (req.body.length >= 1) {
+                // Récupérer la liste des suppléments sélectionnés depuis le corps de la requête
+                const supplementsSelectionnes = req.body['supplements'];
+       
+                // Ajouter les suppléments sélectionnés au panier
+                for (const supplement of supplementsSelectionnes) {
+                    // Récupérer les informations de chaque supplément sélectionné
+                    const supplements = await dataMapper.getProduitByID(supplement);
+                    panier.push(supplements);
+                }
+           }
     
             // Stocker le panier mis à jour dans la session
             req.session.panier = panier;
