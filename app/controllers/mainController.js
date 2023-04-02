@@ -113,6 +113,17 @@ const mainController = {
             .catch((err) => {
             res.send(err) // If some error occurs
             });
+    },
+    recap: async (req, res) => {
+        try {
+            let titre = 'Recapitulatif'
+            res.render('recapitulatifPage', {
+                titre
+            })
+        } catch (error) {
+            console.log(error);
+            res.status(500).send(`An error occured with the database :\n ${error.message}`)
+        }
     }
 
 }
