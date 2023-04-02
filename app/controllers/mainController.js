@@ -40,8 +40,8 @@ const mainController = {
         try {
             // Récupérer le panier actuel de l'utilisateur depuis la session
             let panier = req.session.panier;
-
-           if (req.body.length >= 1) {
+            console.log(req.body)
+           if (Object.keys(req.body).length > 0) {
                 // Récupérer la liste des suppléments sélectionnés depuis le corps de la requête
                 const supplementsSelectionnes = req.body['supplements'];
        
