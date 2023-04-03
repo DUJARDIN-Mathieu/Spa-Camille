@@ -18,9 +18,11 @@ const mainController = {
     supplementPage: async (req, res) => {
         try {
             
+        
           // Récupérer la formule sélectionnée
           const formule = await dataMapper.getProduitByID(req.params.id);
           // Ajouter la formule au panier
+          req.session.panier = []
           req.session.panier[0] = formule;
           console.log(req.session.panier)
           // Récupérer la liste des suppléments
@@ -40,6 +42,9 @@ const mainController = {
     
       ajoutSupp: async (req, res) => {
         try {
+            let formule = req.session.panier[0]
+            req.session.panier = []
+            req.session.panier[0] = formule
             // Récupérer le panier actuel de l'utilisateur depuis la session
             let panier = req.session.panier;
             console.log(req.body)
