@@ -6,7 +6,7 @@ html {
 
 body {
     padding-top: 100px;
-    background: #fff;
+    background: #ececec;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #000000;
@@ -158,7 +158,7 @@ ul.nostyle i {
 /** HEADER **/
 
 #main-nav.navbar-default {
-    background: #FFFFFF;
+    background: #ececec;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
     background: #002c2b;
@@ -185,7 +185,7 @@ ul.nostyle i {
     color: #020202;
 } 
 #main-nav.navbar-default {
-    background: #FFF;
+    background: #ececec;
 }
 
 /** HEADER RESPONSIVE **/
@@ -268,7 +268,7 @@ ul.nostyle i {
     line-height: 49px; 
   
     text-align: right;  
-    color: #000000;
+    color: #FFFFFF;
 }
 #hero-banner h2 b{
     color: #FFFFFF;
@@ -341,8 +341,7 @@ margin-top: 80px;
 }
 #spa, #features {
     padding: 100px 0 75px;
-    background-color: #00a59d;
-    border-top: 3px solid #fff;     
+    background-color: #00a59d;    
     background-size: cover;
 }
 .media.service-box {
@@ -567,12 +566,13 @@ margin-top: 80px;
 /*Presentation*/
 #presentation {
     padding: 100px 0;
+    background-color: #ececec;
     /* background: #07080A; */
     /* background: url('../images/img2.jpg'); */    
     /* background-size: cover; */  
 }
 #presentation .column-title{
-  color:#fff;
+  color:#002c2b;
 }
 #presentation p{
   color: #000000;
@@ -706,6 +706,7 @@ border-radius: 3px 3px 0 0;
 /*Formule*/
 #formule {
     padding: 100px 0 70px;
+    background-color: #ececec;
 }
 #formule ul.formule {
     list-style: none;
@@ -771,6 +772,7 @@ li.plan-purchase .btn {
 
 #contact-us {
     padding: 100px 0 10px;
+    background-color: #ececec;
 }
 
 /*Contact*/
