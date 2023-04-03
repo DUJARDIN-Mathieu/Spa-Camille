@@ -1,6 +1,5 @@
 let donnee = require("./donnee.json")
 
-
 const dataMapper = {
     getProduitByCategory: async function(category){
         const result = donnee.filter((produit) => produit.categorie == "supplement")
