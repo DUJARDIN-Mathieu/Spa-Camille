@@ -6,12 +6,15 @@ html {
 
 body {
     padding-top: 100px;
-    background: #ececec;
+    background: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #000000;
     line-height: 26px;
     padding: 0;
+}
+li {
+    color: #0f5957;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
@@ -49,6 +52,15 @@ hr {
     text-align:center;
 }
 .section-header .section-title {
+    font-size: 44px;
+    color: #00f3e9;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;  
+    display: block;
+    text-align: center;
+}
+.section-header .section-title .alternative-color {
     font-size: 44px;
     color: #002c2b;
     position: relative;
@@ -97,7 +109,7 @@ hr {
 .column-title {
     margin-top: 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee00;
     margin-bottom: 15px;
     position: relative;
     color: #000000;
@@ -158,11 +170,11 @@ ul.nostyle i {
 /** HEADER **/
 
 #main-nav.navbar-default {
-    background: #ececec;
+    background: #000000;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
     background: #002c2b;
-    color: #FFFFFF;
+    color: #00f3e9;
 }
 .navbar.navbar-default {
       border: 0;
@@ -182,11 +194,9 @@ ul.nostyle i {
     background: transparent;
 }
 .navbar-default .navbar-nav>li>a{
-    color: #020202;
+    color: #00f3e9;
 } 
-#main-nav.navbar-default {
-    background: #ececec;
-}
+
 
 /** HEADER RESPONSIVE **/
 
@@ -202,11 +212,11 @@ ul.nostyle i {
         border-bottom: 4px solid transparent;
     }
     .navbar-default .navbar-nav>li>a {
-        color: #0E0E0E;
+        color: #07d3cd;
       }
     #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
         background: #002c2b;  
-        color: #FFFFFF; 
+        color: #00f3e9; 
     }
     #main-nav.navbar-default .dropdown-menu {
         padding: 0 20px;
@@ -343,6 +353,9 @@ margin-top: 80px;
     padding: 100px 0 75px;
     background-color: #00a59d;    
     background-size: cover;
+}
+#spa h2 {
+    color: #002c2b;
 }
 .media.service-box {
     margin: 25px 0 36px;
@@ -566,16 +579,16 @@ margin-top: 80px;
 /*Presentation*/
 #presentation {
     padding: 100px 0;
-    background-color: #ececec;
+    background-color: #000000;
     /* background: #07080A; */
     /* background: url('../images/img2.jpg'); */    
     /* background-size: cover; */  
 }
 #presentation .column-title{
-  color:#002c2b;
+  color:#00f3e9;
 }
 #presentation p{
-  color: #000000;
+  color: #178d8a;
 }
 #presentation .listarrow li{
   color: #000000;
@@ -706,7 +719,7 @@ border-radius: 3px 3px 0 0;
 /*Formule*/
 #formule {
     padding: 100px 0 70px;
-    background-color: #ececec;
+    background-color: #000000;
 }
 #formule ul.formule {
     list-style: none;
@@ -772,7 +785,7 @@ li.plan-purchase .btn {
 
 #contact-us {
     padding: 100px 0 10px;
-    background-color: #ececec;
+    background-color: #000000;
 }
 
 /*Contact*/

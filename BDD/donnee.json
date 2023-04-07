@@ -26,7 +26,7 @@
     {
         "id" : 4,
         "nom" : "La formule Relax",
-        "prix" : 170,
+        "prix" : 160,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/nuitee-semaine",
         "image": ""
@@ -34,7 +34,7 @@
     {
         "id" : 5,
         "nom" : "La formule Détente",
-        "prix" : 190,
+        "prix" : 180,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/nuitee-week-end",
         "image": ""
