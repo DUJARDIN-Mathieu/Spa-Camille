@@ -7,9 +7,7 @@ const dataMapper = {
          
     },
     getProduitByID: async function(id){
-            return donnee[id-1]
-        
-
+            return donnee[id-1]  
     }
 };
 

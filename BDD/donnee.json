@@ -45,7 +45,7 @@
         "prix" : 1.5,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 7,
@@ -53,7 +53,7 @@
         "prix" : 5,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 8,
@@ -61,15 +61,15 @@
         "prix" : 15,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 9,
-        "nom" : "Planche Apéritif",
+        "nom" : "Planche Apéritive",
         "prix" : 17,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/PlancheAperitive.jpg"
     },
     {
         "id" : 10,
@@ -77,7 +77,7 @@
         "prix" : 20,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 11,
@@ -85,7 +85,7 @@
         "prix" : 30,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 12,
@@ -93,7 +93,7 @@
         "prix" : 30,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 13,
@@ -101,7 +101,7 @@
         "prix" : 35,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     },
     {
         "id" : 14,
@@ -109,7 +109,7 @@
         "prix" : 35,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/PlancheAperitiveDinatoire.jpg"
     },
     {
         "id" : 15,
@@ -117,7 +117,7 @@
         "prix" : 40,
         "categorie" : "supplement",
         "calendly" : "",
-        "image": ""
+        "image": "image/ChequeCadeau.jpg"
     }
 
 ]

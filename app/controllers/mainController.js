@@ -5,10 +5,12 @@ const mainController = {
 
     homePage: async (req, res) => {
         try {
-            
+            const formule = await dataMapper.getProduitByCategory('formule')
+            const supplement = await dataMapper.getProduitByCategory('supplement')
+            let randomNumber = Math.floor(Math.random() * 10)
             let titre = 'Levray rêve'
-            res.render('homePage', {
-                titre
+            res.render('homePage', { 
+                titre, formule, supplement, randomNumber
             })
         } catch (error) {
             console.log(error);
