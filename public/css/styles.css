@@ -170,7 +170,7 @@ ul.nostyle i {
 /** HEADER **/
 
 #main-nav.navbar-default {
-    background: #000000;
+    background: #00000055;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
     background: #002c2b;
@@ -188,6 +188,12 @@ ul.nostyle i {
 .navbar.navbar-default .navbar-brand {
       height: auto;
       padding: 10px 15px 1px;
+}
+.navbar-brand>img {
+    height: 5em;
+    position: absolute;
+    left: 10px;
+    top: 0;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     color: #F8680D;
@@ -816,9 +822,9 @@ li.plan-purchase .btn {
     position: absolute;
     width: 100px;
 }
-/***********************
-********* Footer ******
-************************/
+
+/** FOOTER **/
+
 #footer {
     position: absolute;
     bottom: 0;
@@ -826,7 +832,7 @@ li.plan-purchase .btn {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
-    background: #002c2b;
+    background: #000000;
 }
 #footer a {
     color: #fff;

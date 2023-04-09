@@ -17,6 +17,21 @@ const mainController = {
             res.status(500).send(`An error occured with the database :\n ${error.message}`)
         }
     },
+    home: async (req, res) => {
+        try {
+            const formule = await dataMapper.getProduitByCategory('formule')
+            const supplement = await dataMapper.getProduitByCategory('supplement')
+            let randomNumber = Math.floor(Math.random() * 10)
+            let titre = 'Levray rêve'
+            const styles_page = 'styles_home.css'
+            res.render('home', { 
+                titre, formule, supplement, randomNumber, styles_page
+            })
+        } catch (error) {
+            console.log(error);
+            res.status(500).send(`An error occured with the database :\n ${error.message}`)
+        }
+    },
     supplementPage: async (req, res) => {
         try {
             

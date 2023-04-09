@@ -16,4 +16,6 @@ router.post('/ajouter-au-panier', mainController.ajoutSupp);
 router.get('/payment-page', mainController.stripe_pay)
 router.post('/payment', mainController.payment)
 
+router.get('/test', mainController.home)
+
 module.exports = router;
