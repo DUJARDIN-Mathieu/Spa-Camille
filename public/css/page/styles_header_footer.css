@@ -63,15 +63,6 @@ hr {
     display: block;
     text-align: center;
 }
-.section-header .section-title .alternative-color {
-    font-size: 44px;
-    color: #002c2b;
-    position: relative;
-    padding-bottom: 20px;
-    margin: 0 0 20px;  
-    display: block;
-    text-align: center;
-}
 .section-header .section-title:before {
     content: "";
     position: absolute;

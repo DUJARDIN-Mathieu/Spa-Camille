@@ -109,7 +109,7 @@ const mainController = {
                 tarifs: ""
             }
             // Style et JS
-            const styles_page = 'styles-supplement'
+            const styles_page = 'styles-supplement.css'
             const js = ''
 
         
