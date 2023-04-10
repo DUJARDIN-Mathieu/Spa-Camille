@@ -1,29 +1,23 @@
+<%- include('header')%>
 
-<%- include('header') %>
-  <link rel="stylesheet" href="/css/styles-recapitulatif.css">
-</head>
-<body>
-
-  <main>
-    <section class="container">
-      <h1>Récapitulatif de la réservation</h1>
-      <h2>Formule choisie : <%= panier[0].nom %> (<%= panier[0].prix %> €)</h2>
-      <% if (panier.length > 1) { %>
-      <h2>Suppléments choisis :</h2>
-      <ul>
-        <% for (var i = 1; i < panier.length; i++) { %>
-        <li><%= panier[i].nom %> (<%= panier[i].prix %> €)</li>
-        <% } %>
-      </ul>
+<section id="recapitulatif">
+  <div class="section-header">
+      <h2 class="section-title wow fadeInDown">Récapitulatif de la réservation</h2>
+  </div>
+  <div class="liste">
+    <ul id="list">
+      <li>Formule choisie : <%= panier[0].nom %> (<%= panier[0].prix %> €)</li>
+      <% for (i=1; i < panier.length; i++) { %>
+        <li>
+          <%= panier[i].nom %> (<%= panier[i].prix %> €)
+        </li>
       <% } %>
-      <h2>Total : <%= total %> €</h2>
-      <!-- Début de widget de lien Calendly -->
-      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      <a class="calendly-link" href="" onclick="Calendly.initPopupWidget({url: '<%=panier[0].calendly%>' });return false;">Choisir sa réservation</a>
-      <!-- Fin de widget de lien Calendly -->
-    </section>
-  </main>
-
-
+    </ul>
+    <h3>Total : <%= total %> €</h3>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <a class="calendly-link" href="" onclick="Calendly.initPopupWidget({url: '<%=panier[0].calendly%>' });return false;">Choisir sa réservation</a>
+  </div>
+</section>
+  
 <%- include('footer') %>

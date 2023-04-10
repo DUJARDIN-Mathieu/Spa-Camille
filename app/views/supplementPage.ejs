@@ -1,20 +1,22 @@
 <%- include('header')%>
-  <link rel="stylesheet" href="/css/styles-supplement">
-  </head>
-  <body>
-    <h1>Liste de suppléments</h1>
+
+<section id="supplement">
+  <div class="section-header">
+      <h2 class="section-title wow fadeInDown">Liste de suppléments</h2>
+  </div>
+  <div class="liste">
     <form action="/ajouter-au-panier" method="POST">
-      <ul>
-        <% supplement.forEach((supplement) => { %>
+      <ul id="list">
+        <% for (i=0; i < supplement.length; i++) { %>
           <li>
-            <input type="checkbox" name="supplements[]" value="<%= supplement.id %>">
-            <%= supplement.nom %> - <%= supplement.prix %> €
+            <input type="checkbox" name="supplement[]" value="<%= supplement[i].id %>">
+            <%= supplement[i].nom %> - <%= supplement[i].prix %> €
           </li>
-        <% }) %>
+        <% } %>
       </ul>
       <button type="submit">Ajouter au panier</button>
     </form>
-    
-  </body>
-</html>
+  </div>
+</section>
 
+<%- include('footer') %>

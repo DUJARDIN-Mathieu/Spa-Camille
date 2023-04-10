@@ -1,0 +1,46 @@
+<%- include('header') %>
+
+<div class="slide-container">
+    <div class="custom-slider">
+        <img class="slide-img" src="image/slide_tarifs/slide_one.jpg">
+        <div class="slide-title">Notre Tarifs</div>
+    </div>
+    <div class="custom-slider">
+        <img class="slide-img" src="image/slide_tarifs/slide_one.jpg">
+        <div class="slide-title">Notre Tarifs</div>
+    </div>
+    <div class="custom-slider">
+        <img class="slide-img" src="image/slide_tarifs/slide_one.jpg">
+        <div class="slide-title">Notre Tarifs</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<section id="formule">
+    <% for (i=0; i < formule.length; i++) { %>
+            <ul class="formule">
+                <li class="plan-header">
+                    <div>
+                        <img src="image/formule/<%= formule[i].image %>" alt="">
+                    </div>
+                    <div class="plan-name">
+                        <%= formule[i].nom %>
+                    </div>
+                    <div class="price-duration">
+                        <span class="price">
+                            <%= formule[i].prix %>€
+                        </span>
+                        <span class="duration">
+                            pour 2 personnes
+                        </span>
+                    </div>
+                </li>
+                <li><%= formule[i].description %></li>
+                <li><b><%= formule[i].creneau %></b></li>
+                <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/<%= i+1 %>">Réservez maintenant</a></li>
+            </ul>
+        </div>
+    <% } %>
+</section>
+
+<%- include('footer') %>

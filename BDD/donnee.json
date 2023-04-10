@@ -5,7 +5,9 @@
         "prix" : 70,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/2-heure-de-spa-semaine",
-        "image": ""
+        "description": "2 Heure de spa du lundi au jeudi",
+        "image": "zenitude.jpg",
+        "creneau": "Créneaux: 12H ou 15H"
     },
     {
         "id" : 1,
@@ -13,7 +15,9 @@
         "prix" : 80,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/2-heure-de-spa-week-end",
-        "image": ""
+        "description": "2 Heure de spa du vendredi au dimanche",
+        "image": "zenitude.jpg",
+        "creneau": "Créneaux: 12H ou 15H"
     },
     {
         "id" : 3,
@@ -21,7 +25,9 @@
         "prix" : 130,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/4h",
-        "image": ""
+        "description": "4 Heure de spa du lundi au dimanche",
+        "image": "zenitude.jpg",
+        "creneau": "Créneau: 13H"
     },
     {
         "id" : 4,
@@ -29,7 +35,9 @@
         "prix" : 160,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/nuitee-semaine",
-        "image": ""
+        "description": "Nuitée de 18H à 11H du dimanche au jeudi",
+        "image": "zenitude.jpg",
+        "creneau": ""
     },
     {
         "id" : 5,
@@ -37,87 +45,89 @@
         "prix" : 180,
         "categorie" : "formule",
         "calendly" : "https://calendly.com/levray-reve/nuitee-week-end",
-        "image": ""
+        "description": "Nuitée de 18H à 11H du vendredi au samedi",
+        "image": "zenitude.jpg",
+        "creneau": ""
     },
     {
         "id" : 6,
         "nom" : "Soft",
         "prix" : 1.5,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 7,
         "nom" : "Cocktail sans alcool",
         "prix" : 5,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 8,
         "nom" : "Salade de fruit frais",
         "prix" : 15,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 9,
         "nom" : "Planche Apéritive",
         "prix" : 17,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/PlancheAperitive.jpg"
+        "image": "image/PlancheAperitive.jpg",
+        "description": ""
     },
     {
         "id" : 10,
         "nom" : "Décoration Spécial",
         "prix" : 20,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 11,
         "nom" : "Bouquet de rose",
         "prix" : 30,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 12,
         "nom" : "Personne supplémentaire",
         "prix" : 30,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 13,
         "nom" : "Champagne",
         "prix" : 35,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     },
     {
         "id" : 14,
         "nom" : "Planche apéritif dinatoire",
         "prix" : 35,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/PlancheAperitiveDinatoire.jpg"
+        "image": "image/PlancheAperitiveDinatoire.jpg",
+        "description": ""
     },
     {
         "id" : 15,
         "nom" : "Brunch",
         "prix" : 40,
         "categorie" : "supplement",
-        "calendly" : "",
-        "image": "image/ChequeCadeau.jpg"
+        "image": "image/ChequeCadeau.jpg",
+        "description": ""
     }
 
 ]

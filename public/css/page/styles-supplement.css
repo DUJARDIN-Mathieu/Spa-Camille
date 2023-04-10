@@ -1,0 +1,32 @@
+/** supplement **/
+#supplement {
+  padding: 100px 0 75px;    
+  background-size: cover;
+  margin-bottom: 100px;
+}
+#supplement .liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  color: #fff;
+  font-size: 17px;
+}
+#supplement .liste ul{
+  width: 50%;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  list-style-type: none;
+}
+#supplement .liste ul li {
+  color: #fff;
+}
+
+
+  

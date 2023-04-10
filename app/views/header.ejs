@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,8 @@
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/animate.min.css" rel="stylesheet"> 
     <link href="/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet"> 
-
+    <link href="/css/page/styles_header_footer.css" rel="stylesheet"> 
+    <link href="/css/page/<%= styles_page %>" rel="stylesheet">
        
     <link rel="shortcut icon" href="/images/ico/favicon.ico"> 
 </head>
@@ -32,10 +32,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class="scroll active"><a href="/">Accueil</a></li>
-                    <li class="scroll"><a href="#spa">Notre Spa</a></li>
-                    <li class="scroll"><a href="#formule">Nos Tarifs</a></li>
-                    <li class="scroll"><a href="#contact">Nous Contacter</a></li>
+                    <li class="scroll <%=active.home%>"><a href="/">Accueil</a></li>
+                    <li class="scroll <%=active.spa%>"><a href="/spa">Notre Spa</a></li>
+                    <li class="scroll <%=active.tarifs%>"><a href="/tarifs">Nos Tarifs</a></li>
                 </ul>
             </div>
         </div>

@@ -6,7 +6,11 @@ const router = express.Router();
 
 
 
-router.get('/', mainController.homePage);
+router.get('/', mainController.home);
+
+router.get('/spa', mainController.spa);
+
+router.get('/tarifs', mainController.tarifs);
 
 router.get('/supplement/:id', mainController.supplementPage);
 
@@ -16,6 +20,6 @@ router.post('/ajouter-au-panier', mainController.ajoutSupp);
 router.get('/payment-page', mainController.stripe_pay)
 router.post('/payment', mainController.payment)
 
-router.get('/test', mainController.home)
+router.get('/test', mainController.tarifs)
 
 module.exports = router;
