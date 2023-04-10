@@ -198,9 +198,9 @@
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
-    color: #fff;
     text-align: center;
     padding: 0;
+    color: #fff;
 }
 #supplement .container .version-one{
     display: block;
@@ -210,7 +210,6 @@
     align-self: auto;
     order: 0;
     width: 33.3%;
-    height: 20vh;
     background-color: #080808;
     border: solid 3px #111111;
 }
@@ -222,19 +221,21 @@
     align-self: auto;
     order: 0;
     width: 33.3%;
-    height: 20vh;
     background-color: #002c2b;
     border: solid 3px #002120;
+}
+#supplement .container p {
+    margin: 0 5px;
 }
 
 /** RESPONSIVE SUPPLEMENT **/
 
 @media only screen and (max-width: 937px) {
-    #supplement .container h4{
-        font-size: 11px;
+    #supplement .container .version-one{
+        width: 100%;
     }
-    #supplement .container p{
-        font-size: 10px;
+    #supplement .container .version-two{
+        width: 100%;;
     }
 }
 

@@ -72,11 +72,13 @@
                 <div class="version-one">
                     <h4><%= supplement[i].nom %><% console.log(supplement[i]) %></h4>
                     <p><%= supplement[i].description %></p>
+                    <h5><%= supplement[i].prix %>€</h5>
                 </div>
             <% } else {%>
                 <div class="version-two">
                     <h4><%= supplement[i].nom %></h4>
                     <p><%= supplement[i].description %></p>
+                    <h5><%= supplement[i].prix %>€</h5>
                 </div>
             <% } %>
         <% } %>
