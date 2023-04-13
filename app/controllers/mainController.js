@@ -1,6 +1,10 @@
 const dataMapper = require('../../BDD/dataMapper');
 const stripe = require('stripe')(process.env.KEY_STRIPE_SECRET);
 const axios = require('axios');
+const nodemailer = require('nodemailer')
+const { google } = require('googleapis');
+const OAuth2 = google.auth.OAuth2;
+
 
 const mainController = {
 
@@ -16,22 +20,22 @@ const mainController = {
             // Style et JS
             const styles_page = 'styles_home.css'
             const js = 'home.js'
-            // RandomNumber
+            // RandomNumbernutufqkhwvkskogr
             const randomNumber = Math.floor(Math.random() * 10)
             const otherRandomNumber = Math.floor(Math.random() * 10)
             // Appel BDD
             const supplement = await dataMapper.getProduitByCategory('supplement')
             // Appel API
             let reviews = ""
-            axios.get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJR0wYido73UcRnPDnXumtvZE&key=${process.env.MAP_API_KEY}&fields=reviews`)
-                .then(response =>{
-                    reviews = response.data.result.reviews;
-                    console.log(reviews)
-                })
-                .catch(error => {
-                    console.log(error);
-                });
-            console.log(reviews)
+            //axios.get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJR0wYido73UcRnPDnXumtvZE&key=${process.env.MAP_API_KEY}&fields=reviews`)
+                //.then(response =>{
+                   // reviews = response.data.result.reviews;
+                   // console.log(reviews)
+               // })
+               // .catch(error => {
+               //     console.log(error);
+               // });
+            //console.log(reviews)
             //render
             res.render('home', { 
                 titre, active, 
@@ -118,7 +122,6 @@ const mainController = {
           // Ajouter la formule au panier
           req.session.panier = []
           req.session.panier[0] = formule;
-          console.log(req.session.panier)
           // Récupérer la liste des suppléments
           const supplement = await dataMapper.getProduitByCategory('supplement');
       
@@ -142,7 +145,6 @@ const mainController = {
             req.session.panier[0] = formule
             // Récupérer le panier actuel de l'utilisateur depuis la session
             let panier = req.session.panier;
-            console.log(req.body)
             if (Object.keys(req.body).length > 0) {
                 // Récupérer la liste des suppléments sélectionnés depuis le corps de la requête
                 const supplementsSelectionnes = req.body.supplement;
@@ -150,7 +152,6 @@ const mainController = {
 
                     // Ajouter les suppléments sélectionnés au panier
                     for (i=0; i < supplementsSelectionnes.length; i++) {
-                        console.log(supplementsSelectionnes, "for")
                         // Récupérer les informations de chaque supplément sélectionné
                         const supplements = await dataMapper.getProduitByID(supplementsSelectionnes[i]);
                         panier.push(supplements);
@@ -161,7 +162,10 @@ const mainController = {
             // Stocker le panier mis à jour dans la session
             req.session.panier = panier;
             panier = req.session.panier;
-            
+
+            //email
+                  
+
             // Rediriger l'utilisateur vers la page du panier
             res.redirect('/recapitulatif');
         } catch (error) {
@@ -238,7 +242,6 @@ const mainController = {
             const styles_page = 'styles-recapitulatif.css'
             const js = 'tarifs.js'
             let panier = req.session.panier
-            console.log(req.session.panier)
             let total = panier.reduce((acc, cur) => acc + cur.prix, 0);
             process.env.TOTAL = total * 100;
             res.render('recapitulatifPage', {

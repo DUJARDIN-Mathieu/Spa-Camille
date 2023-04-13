@@ -54,80 +54,80 @@
         "nom" : "Mini-Bar",
         "prix" : 1.5,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Dégustez notre sélection de boissons sur demande, toutes sans alcool, à un prix attractif à l'unité. Que vous recherchiez une boisson rafraîchissante ou réconfortante, nous avons ce qu'il vous faut."
+        "image": "ChequeCadeau.jpg",
+        "description": "Plongez dans notre sélection de boissons non-alcoolisées à la demande, préparées avec des ingrédients de qualité supérieure pour une expérience gustative incomparable."
     },
     {
         "id" : 7,
         "nom" : "Cocktail sans alcool",
         "prix" : 5,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Nous sommes passionnés par l'art de la mixologie, c'est pourquoi nous prenons grand soin de préparer chaque cocktail avec des ingrédients de qualité supérieure. Nous sommes fiers de vous proposer une sélection de cocktails uniques et sur mesure, élaborés selon vos goûts et vos préférences."
+        "image": "ChequeCadeau.jpg",
+        "description": "Découvrez notre sélection de cocktails sur mesure, préparés avec soin à partir d'ingrédients de qualité supérieure, pour une expérience de mixologie unique à chaque gorgée."
     },
     {
         "id" : 8,
         "nom" : "Salade de fruit frais",
         "prix" : 15,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Nous sommes attachés à la qualité des ingrédients que nous proposons à nos invités. C'est pourquoi nous avons sélectionné pour vous les fruits les plus savoureux et les plus frais de la saison, pour vous offrir une expérience gustative unique."
+        "image": "ChequeCadeau.jpg",
+        "description": "Nous avons soigneusement choisi les fruits les plus frais et les plus savoureux de la saison pour vous offrir une expérience gustative unique, en mettant l'accent sur la qualité de nos ingrédients."
     },
     {
         "id" : 9,
         "nom" : "Planche Apéritive",
         "prix" : 17,
         "categorie" : "supplement",
-        "image": "image/PlancheAperitive.jpg",
-        "description": "Nous sommes soucieux de la qualité et de la variété des produits que nous proposons à nos invités. C'est pourquoi nous avons soigneusement sélectionné les meilleurs fromages et charcuteries fins pour vous offrir une expérience gustative inoubliable. Et si vous avez des préférences particulières, n'hésitez pas à nous en faire part. Nous sommes à votre disposition pour personnaliser votre planche apéritive et satisfaire tous vos désirs culinaires."
+        "image": "PlancheAperitive.jpg",
+        "description": "Notre sélection de fromages et charcuteries fins a été soigneusement choisie pour offrir une expérience gustative inoubliable, tout en offrant une grande variété de choix. Et si vous avez des préférences particulières, notre équipe sera ravie de personnaliser votre planche apéritive pour satisfaire tous vos désirs culinaires"
     },
     {
         "id" : 10,
         "nom" : "Décoration Spécial",
         "prix" : 20,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Nous sommes attaché à la satisfaction de nos invités et nous nous engageons à vous offrir une expérience de détente sur mesure. C'est pourquoi nous avons créé notre service de décoration personnalisée, afin de répondre à toutes vos demandes les plus extravagantes. Que vous recherchiez une ambiance romantique pour une soirée en amoureux, ou une décoration thématique pour une occasion spéciale, nous sommes là pour réaliser tous vos souhaits les plus fous."
+        "image": "ChequeCadeau.jpg",
+        "description": "Notre engagement envers votre satisfaction est au cœur de tout ce que nous faisons. C'est pourquoi nous avons créé notre service de décoration personnalisée pour répondre à toutes vos demandes, des plus extravagantes aux plus simples, afin de créer une expérience de détente sur mesure qui répondra à tous vos désirs."
     },
     {
         "id" : 11,
         "nom" : "Bouquet de rose",
         "prix" : 30,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Nous sommes soucieux de l'amour et de la passion qui unissent les couples, c'est pourquoi nous avons créé notre service de bouquet de roses personnalisé. Nous avons sélectionné les plus belles roses pour vous offrir un bouquet d'exception, qui ravira les sens de votre bien-aimé(e)."
+        "image": "ChequeCadeau.jpg",
+        "description": "Notre service de bouquet de roses personnalisé a été créé avec amour et passion pour aider les couples à exprimer leur affection. Nous avons sélectionné les plus belles roses pour offrir un bouquet exceptionnel qui ravira les sens de votre bien-aimé(e) et symbolisera votre amour avec élégance."
     },
     {
         "id" : 12,
         "nom" : "Personne supplémentaire",
         "prix" : 30,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Nous sommes attachés à la satisfaction de nos invités et nous mettons tout en œuvre pour vous offrir un séjour sur mesure. C'est pourquoi nous vous proposons la possibilité d'inviter une personne supplémentaire pour partager avec vous notre expérience de détente unique."
+        "image": "ChequeCadeau.jpg",
+        "description": "Pour répondre à vos besoins et offrir une expérience sur mesure, nous avons créé l'option d'inviter une personne supplémentaire à partager notre expérience de détente unique."
     },
     {
         "id" : 13,
         "nom" : "Champagne",
         "prix" : 35,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Chaque détail compte pour vous offrir une expérience de détente exceptionnelle, c'est pourquoi nous avons sélectionné les meilleurs vins et champagnes pour accompagner votre séjour chez nous. "
+        "image": "ChequeCadeau.jpg",
+        "description": "Nous attachons une grande importance aux détails pour offrir une expérience de détente exceptionnelle, c'est pourquoi nous avons sélectionné les meilleurs vins et champagnes pour accompagner votre séjour parmi nous."
     },
     {
         "id" : 14,
         "nom" : "Planche apéritif dinatoire",
         "prix" : 35,
         "categorie" : "supplement",
-        "image": "image/PlancheAperitiveDinatoire.jpg",
-        "description": "Nous sommes soucieux de la qualité et de la variété des produits que nous proposons à nos invités. C'est pourquoi nous avons créé notre service de planche apéritif dinatoire personnalisée, afin de répondre à toutes vos demandes culinaires les plus spécifiques. Que vous recherchiez une planche de charcuterie, de fromages ou de légumes, nous sommes là pour élaborer une planche sur mesure qui ravira vos papilles et celles de vos invités."
+        "image": "PlancheAperitiveDinatoire.jpg",
+        "description": "Nous avons créé notre service de planche apéritif dinatoire personnalisée, pour répondre à toutes vos demandes culinaires spécifiques. Que vous cherchiez une planche de charcuterie, de fromages ou de légumes, nous sommes là pour créer une planche sur mesure qui ravira vos papilles et celles de vos invités."
     },
     {
         "id" : 15,
         "nom" : "Brunch",
         "prix" : 40,
         "categorie" : "supplement",
-        "image": "image/ChequeCadeau.jpg",
-        "description": "Nous sommes passionnés par la gastronomie et nous prenons soin de sélectionner les meilleurs produits pour vous offrir une expérience gustative d'exception. Notre brunch est composé de plats sucrés et salés, de boissons chaudes et fraîches, pour une expérience gourmande et conviviale."
+        "image": "ChequeCadeau.jpg",
+        "description": "Notre brunch est une expérience gustative d'exception, composé des meilleurs produits sucrés et salés, ainsi que des boissons chaudes et fraîches, pour un moment convivial et gourmand."
     }
 
 ]

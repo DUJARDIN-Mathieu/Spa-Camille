@@ -2,15 +2,20 @@
 
 <section id="supplement">
   <div class="section-header">
-      <h2 class="section-title wow fadeInDown">Liste de suppléments</h2>
+      <h2 class="section-title wow fadeInDown">Liste des suppléments</h2>
   </div>
   <div class="liste">
     <form action="/ajouter-au-panier" method="POST">
       <ul id="list">
         <% for (i=0; i < supplement.length; i++) { %>
-          <li>
-            <input type="checkbox" name="supplement[]" value="<%= supplement[i].id %>">
-            <%= supplement[i].nom %> - <%= supplement[i].prix %> €
+          <li class="box">
+            <div class="container">
+              <input class="quantite" type="checkbox" name="supplement[]" value="<%= supplement[i].id %>">
+              <h4 class="title"><%= supplement[i].nom %></h4>
+              <p class="description"><%= supplement[i].description %></p>
+              <h5 class="prix"><%= supplement[i].prix %>€</h5>
+              <img class="image" src="/image/supplement/<%= supplement[i].image %>" >
+            </div>
           </li>
         <% } %>
       </ul>
