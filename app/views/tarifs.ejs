@@ -37,7 +37,7 @@
                 </li>
                 <li><%= formule[i].description %></li>
                 <li><b><%= formule[i].creneau %></b></li>
-                <li class="plan-purchace"><a class="btn btn-primary" href="/supplement/<%= i+1 %>">Réservez maintenant</a></li>
+                <li class="plan-purchace"><a class="btn btn-primary" href="<%= formule[i].calendly %>">Réservez maintenant</a></li>
             </ul>
         </div>
     <% } %>
