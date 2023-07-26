@@ -1,7 +1,6 @@
 const express = require('express');
 
 const mainController = require('./controllers/mainController');
-const mailController = require('./controllers/sendEmailController');
 
 const router = express.Router();
 

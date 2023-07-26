@@ -4,8 +4,6 @@ require('dotenv').config();
 // Import des dépendences
 const express = require('express');
 const session = require('express-session');
-const bodyParser = require('body-parser');
-
 
 // Import des dépendences internes
 const router = require('./app/router');
@@ -17,35 +15,9 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
-// Charger le middleware pour parser les données POST
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.json())
 
 // Setup du dossier public
 app.use(express.static('public'));
-
-
-
-// Mise en place de la session pou enregistre le panier
-app.use(
-    session({
-        secret: process.env.SESSION_SECRET,
-        resave: true,
-        saveUninitialized: true,
-        cookie: {
-            secure: false,
-            maxAge: 1*60*60*1000
-        },
-    })
-);
-
-app.use((req, res, next) => {
-    if (req.session.panier === undefined){
-        req.session.panier = []
-    };
-    next()
-});
-
 
 
 // Plug le router
