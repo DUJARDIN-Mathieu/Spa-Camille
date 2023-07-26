@@ -7,23 +7,13 @@ const router = express.Router();
 
 
 
-router.get('/', mainController.home);
+router.get('/', mainController.levrayreve);
 
-router.get('/spa', mainController.spa);
+router.get('/spadereve', mainController.spadereve);
 
-router.get('/tarifs', mainController.tarifs);
+router.get('/bulledereve', mainController.bulledereve);
 
-router.get('/supplement/:id', mainController.supplementPage);
+router.get('/massagedereve', mainController.massagedereve);
 
-router.get('/recapitulatif', mainController.recap)
-router.post('/ajouter-au-panier', mainController.ajoutSupp);
-router.post('/email-supplement', mailController.tombola)
-
-router.get('/payment-page', mainController.stripe_pay)
-router.post('/payment', mainController.payment)
-
-router.get('/test', function (req, res) {
-    res.render('calendly')
-})
 
 module.exports = router;

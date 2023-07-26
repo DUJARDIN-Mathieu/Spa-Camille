@@ -51,75 +51,76 @@
     },
     {
         "id" : 6,
-        "nom" : "Mini-Bar",
-        "prix" : 1.5,
-        "categorie" : "supplement",
-        "image": "ChequeCadeau.jpg",
-        "description": "Plongez dans notre sélection de boissons non-alcoolisées à la demande, préparées avec des ingrédients de qualité supérieure pour une expérience gustative incomparable."
-    },
-    {
-        "id" : 7,
         "nom" : "Cocktail sans alcool",
         "prix" : 5,
         "categorie" : "supplement",
         "image": "ChequeCadeau.jpg",
-        "description": "Découvrez notre sélection de cocktails sur mesure, préparés avec soin à partir d'ingrédients de qualité supérieure, pour une expérience de mixologie unique à chaque gorgée."
+        "description": "Voyagez dans un monde de saveurs rafraîchissantes avec nos cocktails sans alcool, l'expérience ultime de délicieuse sobriété."
     },
     {
-        "id" : 8,
-        "nom" : "Salade de fruit frais",
-        "prix" : 15,
-        "categorie" : "supplement",
-        "image": "ChequeCadeau.jpg",
-        "description": "Nous avons soigneusement choisi les fruits les plus frais et les plus savoureux de la saison pour vous offrir une expérience gustative unique, en mettant l'accent sur la qualité de nos ingrédients."
-    },
-    {
-        "id" : 9,
+        "id" : 7,
         "nom" : "Planche Apéritive",
         "prix" : 17,
         "categorie" : "supplement",
         "image": "PlancheAperitive.jpg",
-        "description": "Notre sélection de fromages et charcuteries fins a été soigneusement choisie pour offrir une expérience gustative inoubliable, tout en offrant une grande variété de choix. Et si vous avez des préférences particulières, notre équipe sera ravie de personnaliser votre planche apéritive pour satisfaire tous vos désirs culinaires"
+        "description": "Dégustez une explosion de saveurs avec notre irrésistible petite planche apéro, un assortiment gourmand pour un apéritif réussi."
     },
+    {
+        "id" : 8,
+        "nom" : "Plateau de fruit frais",
+        "prix" : 35,
+        "categorie" : "supplement",
+        "image": "ChequeCadeau.jpg",
+        "description": "Savourez la fraîcheur et la douceur de l'été avec notre délicieux plateau de fruits frais, une invitation au plaisir des sens."
+    },
+    {
+        "id" : 9,
+        "nom" : "Planche Dinatoire",
+        "prix" : 35,
+        "categorie" : "supplement",
+        "image": "ChequeCadeau.jpg",
+        "description": "Plongez dans un festin de délices avec notre irrésistible planche dinatoire, une symphonie de saveurs pour combler toutes vos envies."
+    },
+    
     {
         "id" : 10,
         "nom" : "Décoration Spécial",
         "prix" : 20,
         "categorie" : "supplement",
         "image": "ChequeCadeau.jpg",
-        "description": "Notre engagement envers votre satisfaction est au cœur de tout ce que nous faisons. C'est pourquoi nous avons créé notre service de décoration personnalisée pour répondre à toutes vos demandes, des plus extravagantes aux plus simples, afin de créer une expérience de détente sur mesure qui répondra à tous vos désirs."
+        "description": "Sublimez votre événement avec notre décoration spéciale, une touche d'élégance et de créativité pour rendre chaque instant magique."
     },
     {
         "id" : 11,
         "nom" : "Bouquet de rose",
-        "prix" : 30,
+        "prix" : 35,
         "categorie" : "supplement",
         "image": "ChequeCadeau.jpg",
-        "description": "Notre service de bouquet de roses personnalisé a été créé avec amour et passion pour aider les couples à exprimer leur affection. Nous avons sélectionné les plus belles roses pour offrir un bouquet exceptionnel qui ravira les sens de votre bien-aimé(e) et symbolisera votre amour avec élégance."
+        "description": "Exprimez vos sentiments avec élégance et passion grâce à notre bouquet de roses, un cadeau intemporel qui enflammera les cœurs."
     },
     {
         "id" : 12,
-        "nom" : "Personne supplémentaire",
-        "prix" : 30,
+        "nom" : "Plateau mignardise",
+        "prix" : 35,
         "categorie" : "supplement",
         "image": "ChequeCadeau.jpg",
-        "description": "Pour répondre à vos besoins et offrir une expérience sur mesure, nous avons créé l'option d'inviter une personne supplémentaire à partager notre expérience de détente unique."
+        "description": "Plongez dans un monde de délices avec notre plateau de mignardises, une tentation sucrée pour éveiller vos papilles en toute élégance."
     },
     {
         "id" : 13,
-        "nom" : "Champagne",
-        "prix" : 35,
+        "nom" : "Formule Repas",
+        "prix" : 80,
         "categorie" : "supplement",
         "image": "ChequeCadeau.jpg",
-        "description": "Nous attachons une grande importance aux détails pour offrir une expérience de détente exceptionnelle, c'est pourquoi nous avons sélectionné les meilleurs vins et champagnes pour accompagner votre séjour parmi nous."
+        "description": "Un voyage gustatif complet vous attend : profitez de notre formule repas avec une planche apéro alléchante, un repas préparé sur place, un dessert de saison et une boisson rafraîchissante pour une expérience culinaire inoubliable."
     },
     {
         "id" : 14,
-        "nom" : "Planche apéritif dinatoire",
-        "prix" : 35,
+        "nom" : "Formule grand Amour",
+        "prix" : 70,
         "categorie" : "supplement",
         "image": "PlancheAperitiveDinatoire.jpg",
-        "description": "Nous avons créé notre service de planche apéritif dinatoire personnalisée, pour répondre à toutes vos demandes culinaires spécifiques. Que vous cherchiez une planche de charcuterie, de fromages ou de légumes, nous sommes là pour créer une planche sur mesure qui ravira vos papilles et celles de vos invités."
+        "description": "Célébrez votre grand amour avec notre formule Grand Amour : une rose éternelle, des pétales de rose, des bougies, une ambiance musicale love, une lueur romantique en LED rouge et une délicieuse mini planche apéro pour une soirée d'exception à deux."
     },
     {
         "id" : 15,
