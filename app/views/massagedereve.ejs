@@ -1,0 +1,50 @@
+<%- include('header') %>
+
+<section id="presentation">
+    <div class="container">    
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+                <img class="img-responsive" src="/image/levrayreve/massagedereve.jpg" alt="chèque cadeau">
+            </div>
+            <div class="col-sm-6 wow fadeInRight text-one">
+                <h3 class="column-title"><b>Découvrez l'ultime perfection de la détente !</b> - Offrez-vous nos massages complets du dos, des jambes et des pieds pour une expérience de bien-être inégalée chez Levray Rêve.</h3>
+                <p>Bienvenue dans l'apaisant royaume de Levray Rêve, où votre bien-être est notre priorité absolue. Nos massages complets ont été conçus pour vous procurer une relaxation totale, de la tête aux pieds.</p>
+                <p>Commencez votre voyage de détente par notre massage du dos, un traitement enveloppant qui dénoue les tensions et apaise les muscles endoloris. Nos thérapeutes hautement qualifiés utiliseront des techniques expertes pour vous libérer de toute raideur et vous laisser avec une sensation de légèreté.</p>
+                <p>Poursuivez cette escapade de bien-être avec notre massage des jambes, un soin délicat qui ravive la vitalité de vos membres inférieurs. Vos jambes fatiguées seront dorlotées et réconfortées, vous offrant une sensation revigorante qui vous invitera à la détente totale.</p>
+                <p>Enfin, terminez cette expérience exquise avec notre massage des pieds, un moment de bonheur pour vos extrémités. Nos praticiens experts appliqueront des techniques apaisantes pour soulager vos pieds, éliminant toute tension accumulée et vous procurant une sensation de sérénité.</p>
+                <p>Chez Levray Rêve, nous croyons que chaque personne mérite de se sentir parfaitement détendue et revitalisée. Nos massages complets sont l'essence même du bien-être, une symphonie de touchers attentifs et de soins bienveillants.</p>
+                <p>Réservez dès maintenant votre séance de massage complet et plongez dans une expérience de relaxation qui vous transportera dans un état de bien-être profond. Nous sommes impatients de vous accueillir chez Levray Rêve et de vous offrir un moment de détente ultime, où chaque muscle sera apaisé et chaque souci s'évaporera. Entrez dans un monde de sérénité et laissez-nous prendre soin de vous avec tout notre savoir-faire.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="formule_massage">
+    <% for (i=0; i < formule.length; i++) { %>
+            <ul class="formule_massage">
+                <li class="plan-header">
+                    <div>
+                        <img src="image/levrayreve/massagedereve.jpg" alt="">
+                    </div>
+                    <div class="plan-name">
+                        <%= formule[i].nom %>
+                    </div>
+                    <div class="price-duration">
+                        <span class="price">
+                            <%= formule[i].prix %>€
+                        </span>
+                        <span class="duration">
+                            pour 2 personnes
+                        </span>
+                    </div>
+                </li>
+                <li><%= formule[i].description %></li>
+                <li class="plan-purchace"><a class="btn btn-primary" href="<%= formule[i].calendly %>">Réservez maintenant</a></li>
+            </ul>
+        </div>
+    <% } %>
+</section>
+
+<a href="#formule_massage" class="myButton">Réservez</a>
+
+<%- include('footer') %>

@@ -53,7 +53,7 @@ const mainController = {
             const js = 'spadereve.js'
 
             // Appel BDD
-            const formule = await dataMapper.getProduitByCategory('formule')
+            const formule = await dataMapper.getProduitByCategory('spa')
 
             // Rendu
             res.render('spadereve', {
@@ -82,11 +82,13 @@ const mainController = {
             const js = 'bulledereve.js'
 
             // Appel BDD
+            const formule = await dataMapper.getProduitByCategory('bulle')
 
             // Rendu
             res.render('bulledereve', {
                 titre, active,
-                styles_page, js
+                styles_page, js,
+                formule
             })
         } catch (error) {
             console.log(error);
@@ -109,11 +111,13 @@ const mainController = {
             const js = 'massagedereve.js'
 
             // Appel BDD
+            const formule = await dataMapper.getProduitByCategory('massage')
 
             // Rendu
             res.render('massagedereve', {
                 titre, active,
-                styles_page, js
+                styles_page, js,
+                formule
             })
         } catch (error) {
             console.log(error);

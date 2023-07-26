@@ -1,0 +1,72 @@
+<%- include('header') %>
+
+<section id="presentation">
+    <div class="container">    
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+                <img class="img-responsive" src="/image/levrayreve/bulledereve.jpg" alt="chèque cadeau">
+            </div>
+            <div class="col-sm-6 wow fadeInRight text-one">
+                <h3 class="column-title"><b>Osez l'insolite pour une nuit inoubliable !</b> Découvrez notre espace détente unique, où spa en plein air, salon de jardin et chambre sous bulle vous offrent une expérience magique, dormez à la belle étoile et reconnectez-vous avec la nature.</h3>
+                <p>Bienvenue dans notre retraite de charme, où une nuit insolite vous attend, loin du quotidien, pour une escapade qui restera gravée dans vos souvenirs. Notre espace détente exclusif a été conçu pour vous offrir une expérience véritablement hors du commun.</p>
+                <p>Commencez votre soirée en vous délassant dans notre spa en plein air, entouré de paysages enchanteurs. Laissez-vous bercer par l'eau apaisante tandis que les étoiles brillent au-dessus de vous, créant une ambiance magique et relaxante.</p>
+                <p>Ensuite, prenez place dans notre salon de jardin, un havre de paix où vous pourrez vous détendre et vous ressourcer au milieu de la nature. Profitez de moments de convivialité entre amis ou partagez des instants romantiques en couple.</p>
+                <p>Mais le clou de cette expérience unique est notre chambre sous bulle. Immergez-vous dans un cocon intime, où vous pourrez dormir à la belle étoile, en toute sérénité et en toute intimité. L'immensité du ciel étoilé sera votre toit, offrant une vue à couper le souffle, pour une nuit magique et romantique.</p>
+                <p>Et pour votre confort, un petit cabanon discret est à votre disposition, avec une toilette sèche et une douche, préservant ainsi l'harmonie avec la nature environnante.</p>
+                <p>Cette nuit insolite est l'occasion idéale de vous déconnecter du stress de la vie quotidienne, de retrouver la sérénité et de vous laisser emporter par la beauté de la nature. Que ce soit pour une escapade romantique, une aventure entre amis ou une reconnexion avec vous-même, notre espace détente unique vous promet une expérience inoubliable.</p>
+                <p>Réservez dès maintenant pour vivre une nuit magique, où spa en plein air, salon de jardin et chambre sous bulle s'unissent pour créer des souvenirs impérissables. Laissez-vous tenter par cette escapade insolite et embarquez dans une aventure hors du commun. Une expérience immersive vous attend, prête à vous émerveiller et à vous enchanter. Bienvenue dans votre nuit inoubliable sous les étoiles !</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="equipement">
+    <div class="section-header">
+        <h2 class="section-title wow fadeInDown">Nos équipements</h2>
+    </div>
+    <div class="liste">
+        <ul id="list">
+            <li><b>✓</b>  Lit Queen Size</li>
+            <li><b>✓</b>  douche </li>
+            <li><b>✓</b>  Chaussons</li>
+            <li><b>✓</b>  Gel douche / Shampoing</li>
+            <li><b>✓</b>  Serviettes</li>
+        </ul>
+        <ul>
+            <li><b>✓</b>  Peignoirs</li>
+            <li><b>✓</b>  Toilette seche</li>
+            <li><b>✓</b>  Sèche-cheveux</li>
+            <li><b>✓</b>  Linge de lit</li>
+        </ul>
+    </div>
+</section>
+
+<section id="formule_bulle">
+    <% for (i=0; i < formule.length; i++) { %>
+            <ul class="formule_bulle">
+                <li class="plan-header">
+                    <div>
+                        <img src="image/formule/<%= formule[i].image %>" alt="">
+                    </div>
+                    <div class="plan-name">
+                        <%= formule[i].nom %>
+                    </div>
+                    <div class="price-duration">
+                        <span class="price">
+                            <%= formule[i].prix %>€
+                        </span>
+                        <span class="duration">
+                            pour 2 personnes
+                        </span>
+                    </div>
+                </li>
+                <li><%= formule[i].description %></li>
+                <li class="plan-purchace"><a class="btn btn-primary" href="<%= formule[i].calendly %>">Réservez maintenant</a></li>
+            </ul>
+        </div>
+    <% } %>
+</section>
+
+<a href="#formule_bulle" class="myButton">Réservez</a>
+
+<%- include('footer') %>
