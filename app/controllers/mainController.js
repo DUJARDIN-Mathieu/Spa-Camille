@@ -53,11 +53,13 @@ const mainController = {
             const js = 'spadereve.js'
 
             // Appel BDD
+            const formule = await dataMapper.getProduitByCategory('formule')
 
             // Rendu
             res.render('spadereve', {
                 titre, active,
-                styles_page, js
+                styles_page, js,
+                formule
             })
         } catch (error) {
             console.log(error);
