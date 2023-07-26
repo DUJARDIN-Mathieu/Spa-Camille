@@ -3,7 +3,6 @@ require('dotenv').config();
 
 // Import des dépendences
 const express = require('express');
-const session = require('express-session');
 
 // Import des dépendences internes
 const router = require('./app/router');
