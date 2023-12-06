@@ -1,0 +1,87 @@
+/** supplement **/
+
+#supplement {
+  padding: 100px 0 75px 0;    
+  background-size: cover;
+  margin-bottom: 100px;
+}
+#supplement .liste {
+  color: #fff;
+  font-size: 17px;
+}
+#supplement .liste ul{
+  list-style-type: none;
+}
+#supplement .liste ul li {
+  color: #fff;
+  background: #002c2b;
+  width: 80%;
+}
+#supplement #list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: normal;
+  padding: 0;
+}
+#supplement .box {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 10px 0;
+}
+
+#supplement .container {
+  display: grid; 
+  grid-template-columns: 25% 50% 25%;  
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "image title prix"
+    "image description quantite"; 
+  justify-content: center;
+}
+#supplement .image { 
+  grid-area: image; 
+  margin: 10px 0;
+  width: 100%;
+}
+#supplement .title { 
+  grid-area: title; 
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+#supplement .description { 
+  grid-area: description; 
+  text-align: center;
+  margin: 10px;
+}
+#supplement .prix { 
+  grid-area: prix; 
+  font-size: 25px;
+  text-align: center;
+}
+#supplement .quantite { 
+  grid-area: quantite; 
+  width: 25%;
+  justify-self: center;
+}
+
+/** RESPONSIVE SUPPLEMENT **/
+
+@media only screen and (max-width: 937px) {
+  #supplement .description { 
+    display: none;
+    grid-area: description; 
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+  

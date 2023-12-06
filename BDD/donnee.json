@@ -6,16 +6,18 @@
         "categorie" : "spa",
         "calendly" : "https://calendly.com/spadereve/formule-zenitude",
         "description": "2 Heure de spa du lundi au jeudi",
-        "image": "zenitude.jpg"
+        "image": "zenitude.jpg",
+        "cadeau": "https://buy.stripe.com/6oE4i9b9a6vudjO5lz"
     },
     {
         "id" : 1,
         "nom" : "La formule Délice",
-        "prix" : 80,
+        "prix" : 90,
         "categorie" : "spa",
         "calendly" : "https://calendly.com/spadereve/formule-delice",
         "description": "2 Heure de spa du vendredi au dimanche",
-        "image": "zenitude.jpg"
+        "image": "zenitude.jpg",
+        "cadeau": "https://buy.stripe.com/fZe15X6SU0762Fa4hw"
     },
     {
         "id" : 3,
@@ -24,25 +26,28 @@
         "categorie" : "spa",
         "calendly" : "https://calendly.com/spadereve/formule-gourmande",
         "description": "4 Heure de spa du lundi au dimanche",
-        "image": "zenitude.jpg"
+        "image": "zenitude.jpg",
+        "cadeau": "https://buy.stripe.com/9AQ2a11yA9HG5Rm4hx"
     },
     {
         "id" : 4,
         "nom" : "La formule Relax",
-        "prix" : 180,
+        "prix" : 170,
         "categorie" : "spa",
         "calendly" : "https://calendly.com/spadereve/formule-relax",
         "description": "Nuitée de 18H à 11H du dimanche au jeudi",
-        "image": "zenitude.jpg"
+        "image": "zenitude.jpg",
+        "cadeau": "https://buy.stripe.com/9AQdSJdhicTSgw015i"
     },
     {
         "id" : 5,
         "nom" : "La formule Détente",
-        "prix" : 200,
+        "prix" : 190,
         "categorie" : "spa",
         "calendly" : "https://calendly.com/levray-reve/formule-detente",
         "description": "Nuitée de 18H à 11H du vendredi au samedi",
-        "image": "zenitude.jpg"
+        "image": "zenitude.jpg",
+        "cadeau": "https://buy.stripe.com/6oE7ul4KMaLK0x2g0g"
     },
     {
         "id" : 6,
